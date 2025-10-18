@@ -1,0 +1,16 @@
+﻿node_modules/
+__pycache__/
+.env
+*.exe
+*.zip
+*.mp4
+*.jpg
+*.jpeg
+*.png
+*.pdf
+*.docx
+*.pptx
+*.xlsx
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:14-alpine
+    environment:
+      POSTGRES_DB: gait_analysis
+      POSTGRES_USER: gait_user
+      POSTGRES_PASSWORD: secure_password_123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  cache:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - cache
+    environment:
+      DATABASE_URL: postgresql://gait_user:secure_password_123@db:5432/gait_analysis
+      REDIS_URL: redis://cache:6379
+      MODEL_PATH: /app/models
+    volumes:
+      - ./models:/app/models:ro
+      - ./uploads:/app/uploads
+      - ./results:/app/results
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+    environment:
+      API_URL: http://api:8000
+    volumes:
+      - ./results:/app/results:ro
+    command: streamlit run app/streamlit_dashboard.py --server.port=8501 --server.address=0.0.0.0
+
+volumes:
+  postgres_data:
+
+
