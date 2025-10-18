@@ -1,4 +1,4 @@
-yes"""
+"""
 Interactive Streamlit dashboard for gait analysis visualization (Step 10)
 """
 

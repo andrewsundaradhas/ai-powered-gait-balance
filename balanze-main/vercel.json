@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app/main.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "app/streamlit_dashboard.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "api/.*\.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(?<path>.+)",
+      "dest": "/app/main.py"
+    },
+    {
+      "src": "/dashboard",
+      "dest": "/app/streamlit_dashboard.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/app/streamlit_dashboard.py"
+    }
+  ],
+  "env": {
+    "PYTHONUNBUFFERED": "true"
+  },
+  "build": {
+    "env": {
+      "PYTHON_VERSION": "3.9"
+    }
+  }
+}

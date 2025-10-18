@@ -48,6 +48,19 @@ ENV/
 # Logs and databases
 *.log
 *.sql
+
+# Vercel
+.vercel/
+.vercel_build_output/
+.vercel_deployment_complete.json
+.vercel_project.json
+.vercel_build_output/
+.vercel_build_output/
+
+# Environment variables
+.env
+.env.*
+!.env.example
 *.sqlite
 
 # Environment variables
