@@ -1,8 +1,6 @@
 # 🚀 AI-Powered Gait and Balance Analysis System
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 A comprehensive AI-powered system for analyzing human gait and balance patterns to assess mobility and detect potential disorders.
 
@@ -173,15 +171,7 @@ docker-compose down
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📧 Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - your.email@example.com
-
-Project Link: [https://github.com/yourusername/ai-gait-analysis](https://github.com/yourusername/ai-gait-analysis)
 
 ## 🙏 Acknowledgments
 
@@ -421,15 +411,6 @@ kubectl get pods -n balanze
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📧 Contact
-
-For questions or support, please open an issue or contact [your-email@example.com](mailto:your-email@example.com)
-```
-
 ### Code Style
 
 This project uses:
@@ -445,12 +426,4 @@ isort .
 flake8
 ```
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Built with [MediaPipe](https://mediapipe.dev/) for pose estimation
-- Inspired by clinical gait analysis systems
-- Thanks to all contributors and open-source projects that made this possible
