@@ -1,10 +1,10 @@
-# 🚀 AI-Powered Gait and Balance Analysis System
+#  AI-Powered Gait and Balance Analysis System
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
 A comprehensive AI-powered system for analyzing human gait and balance patterns to assess mobility and detect potential disorders.
 
-## 🎯 Features
+##  Features
 
 - **Real-time Gait Analysis**: Capture and analyze walking patterns in real-time
 - **Balance Assessment**: Evaluate postural stability and balance metrics
@@ -15,7 +15,7 @@ A comprehensive AI-powered system for analyzing human gait and balance patterns 
 - **Data Validation**: Robust data validation and versioning
 - **Model Management**: Version control and management of ML models
 
-## 🛠 Installation
+## Installation
 
 ### Prerequisites
 
@@ -55,7 +55,7 @@ A comprehensive AI-powered system for analyzing human gait and balance patterns 
    MODEL_DIR=models
    ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Generate Synthetic Data (if needed)
 ```bash
@@ -77,7 +77,7 @@ Open your browser and navigate to:
 - API Documentation: http://localhost:8000/docs
 - Web Dashboard: http://localhost:8501
 
-## 🏗 Project Structure
+##  Project Structure
 
 ```
 ai-gait-analysis/
@@ -110,7 +110,7 @@ ai-gait-analysis/
 └── README.md               # This file
 ```
 
-## 🤖 Model Architecture
+##  Model Architecture
 
 The system uses a combination of traditional machine learning models:
 
@@ -118,7 +118,7 @@ The system uses a combination of traditional machine learning models:
 2. **Balance Classifier**: Gradient Boosting model for assessing balance stability
 3. **Disorder Detector**: Ensemble model for detecting potential mobility disorders
 
-## 📊 Data Flow
+##  Data Flow
 
 1. **Data Collection**: Capture motion data from sensors or video
 2. **Preprocessing**: Clean and normalize the raw data
@@ -127,14 +127,14 @@ The system uses a combination of traditional machine learning models:
 5. **Visualization**: Generate interactive plots and reports
 6. **Storage**: Save results to database for future reference
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 - `POST /api/analyze/gait`: Analyze gait from video or sensor data
 - `GET /api/analysis/{analysis_id}`: Get analysis results
 - `GET /api/models`: List available models
 - `POST /api/models/upload`: Upload a new model (admin only)
 
-## 🛠 Development
+##  Development
 
 ### Running Tests
 ```bash
@@ -151,7 +151,7 @@ black .
 flake8 .
 ```
 
-## 🐳 Docker Deployment
+##  Docker Deployment
 
 ### Build and Run
 ```bash
@@ -163,7 +163,7 @@ docker-compose up --build
 docker-compose down
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
@@ -171,45 +171,33 @@ docker-compose down
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
-## 🙏 Acknowledgments
-
-- [OpenCV](https://opencv.org/) for computer vision capabilities
-- [MediaPipe](https://google.github.io/mediapipe/) for pose estimation
-- [FastAPI](https://fastapi.tiangolo.com/) for the API framework
-- [Streamlit](https://streamlit.io/) for the web interface
-- [scikit-learn](https://scikit-learn.org/) for machine learning models
-
-A comprehensive, production-ready system for clinical and research-grade gait and balance analysis using computer vision and machine learning.
-
-## 🚀 Key Features
+##  Key Features
 
 - **Multi-Modal Analysis**
-  - 🚶‍♂️ Gait analysis (temporal-spatial parameters)
-  - ⚖️ Static and dynamic balance assessment
-  - 🧪 Clinical test automation (TUG, BBS, 6MWT)
-  - 🦵 Joint kinematics and kinetics
+  -  Gait analysis (temporal-spatial parameters)
+  -  Static and dynamic balance assessment
+  -  Clinical test automation (TUG, BBS, 6MWT)
+  -  Joint kinematics and kinetics
 
 - **Advanced AI/ML Capabilities**
-  - 🧠 Deep learning-powered pose estimation
-  - 📊 Automated feature extraction
-  - 📈 Time-series analysis of movement patterns
-  - 🔍 Anomaly detection for movement disorders
+  -  Deep learning-powered pose estimation
+  -  Automated feature extraction
+  -  Time-series analysis of movement patterns
+  -  Anomaly detection for movement disorders
 
 - **Clinical Integration**
-  - 📋 Standardized clinical reports
-  - 📱 Web-based dashboard
-  - 🔄 EHR/EMR integration ready
-  - 🔐 HIPAA-compliant data handling
+  -  Standardized clinical reports
+  -  Web-based dashboard
+  -  EHR/EMR integration ready
+  -  HIPAA-compliant data handling
 
 - **Visualization & Reporting**
-  - 📊 Interactive 3D motion visualization
-  - 📉 Time-series analytics dashboard
-  - 📱 Responsive web interface
-  - 📤 PDF/CSV export capabilities
+  -  Interactive 3D motion visualization
+  -  Time-series analytics dashboard
+  -  Responsive web interface
+  -  PDF/CSV export capabilities
 
-## 🛠 Installation
+##  Installation
 
 ### Prerequisites
 - Python 3.9+
@@ -244,7 +232,7 @@ A comprehensive, production-ready system for clinical and research-grade gait an
    python scripts/download_models.py
    ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Web Application (Recommended)
 
@@ -346,7 +334,7 @@ balanze/
 └── README.md                 # This file
 ```
 
-## 🛠 Development
+##  Development
 
 ### Setting Up Development Environment
 
@@ -381,7 +369,7 @@ balanze/
    isort src/
    ```
 
-## 🚀 Deployment
+##  Deployment
 
 ### Docker Deployment
 
@@ -403,27 +391,12 @@ kubectl apply -f k8s/
 kubectl get pods -n balanze
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-### Code Style
-
-This project uses:
-- Black for code formatting
-- isort for import sorting
-- flake8 for linting
-
-Run the following commands to ensure code quality:
-
-```bash
-black .
-isort .
-flake8
-```
 
 
